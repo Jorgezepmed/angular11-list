@@ -1,0 +1,13 @@
+<h2><strong>Manage People List</strong></h2>
+<hr>
+
+<div class="container">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <app-person *ngFor="let person of persons" [person]='person' (deletePerson)='deletePerson($event)'></app-person>
+</div>
